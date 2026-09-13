@@ -31,20 +31,12 @@ Abre tu aplicación **Termux** y ejecuta los siguientes comandos:
 # 1. Actualizar paquetes del sistema
 pkg update && pkg upgrade -y
 
-# 2. Instalar dependencias necesarias (Python, Git)
-pkg install python git -y
+# 3. clonar repo
+git clone https://github.com/kravox-tool/ip-tool.git
 
-# 3. Instalar los requerimientos de Python
-pip install -r requirements.txt
+# 3. entrar al repo
+cd ip-tool 
 
-# 4. Ejecutar la herramienta (Python reconocerá la estructura de paquetes gracias a los archivos __init__.py)
-python3 ip_tools.py
+# 4. Ejecutar la herramienta 
+python ip.py
 ```
-
----
-
-## ⚠️ Aviso Legal (Disclaimer)
-> *Esta herramienta ha sido creada estrictamente con **fines educativos, de auditoría interna y diagnóstico de redes**. El uso de las funciones de estrés contra objetivos externos sin autorización previa y explícita es ilegal.*
-
-## 📄 Licencia
-Distribuido bajo la Licencia MIT. Consulta el archivo `LICENSE` para más información.
